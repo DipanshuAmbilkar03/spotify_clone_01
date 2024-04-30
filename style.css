@@ -1,0 +1,245 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin : 0;
+    background-color: #000;
+    color : white;
+    overflow : scroll;
+}
+.main {
+    display :flex;
+    height : 100vh;
+    padding : 0.5rem;
+}
+.sidebar {
+    background-color : rgb(0, 0, 0);
+    width : 300px;
+    border-radius: 1rem; /*1rem -16px*/ 
+    margin-right :0.5rem;
+}
+.maincontent {
+    background-color :#121212;
+    flex :1;
+    border-radius: 1rem; /*1rem -16px*/ 
+    overflow : auto;
+    padding : 0 1.5rem 0 1.5rem;
+}
+.music-player {
+    background-color: #000;
+    position : fixed;
+    bottom : 0px;
+    height : 72px;
+    width : 100%;
+}
+a {
+    color :white;
+    text-decoration: none;
+}
+.nav {
+    background-color: #121212;
+    height : 50px;
+    border-radius : 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height :100px;
+    padding : 0.5rem 0.78rem;
+}
+.nav-option {
+    line-height : 2.5rem;
+    opacity: 0.7; 
+}
+
+.nav-option:hover {
+    opacity: 1; 
+}
+
+.nav-option i{
+    font-size : 1.25rem;
+}
+.nav-option a {
+    font-size : 1rem;
+    padding : 1rem;
+    margin : 0.25rem;
+}   
+.library {
+    background-color: #121212;
+    height : 100%;
+    border-radius : 1rem;
+    margin-top : 0.5rem;
+    padding : 0.5rem 0.78rem;
+}
+.options {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.library-options img {
+    height : 1.25rem;
+    width : 1.25rem;;
+}
+.icons {
+    font-size: 1 rem;
+    display : flex;
+}
+.icons i{
+    margin-right : 1rem;
+    opacity : 0.7;
+}
+.icons i:hover {
+    opacity: 1;
+}
+
+.box {
+    height : 7rem;
+    width : 15rem;
+    border-radius : 1rem;
+    background: rgb(48, 48, 48);
+    margin : 0.5rem 0 1.5rem 0;
+    padding : 1rem 1.2rem 1rem 1.2rem;
+}
+.box1 {
+    font-size: .9rem;
+    font-weight :600;
+    margin-top : 0.4rem;
+}
+.box2{
+    font-size : .8rem;
+    opacity: 0.9rem;
+    font-weight :500;
+}
+.badge {
+    background-color: #fff;
+    border-radius: 2rem;
+    border :none;
+    padding : 0.25rem 1rem;
+    margin :0.5rem;
+    font-weight : 650;
+    height: 2rem;
+    width : fit-content;
+}
+.sticky-nav {
+    position: sticky;
+    top :0;
+    background-color: #121212;
+    display :flex;
+    justify-content: space-between;
+    align-items: center;
+    padding :1rem 0 1rem 0;
+    z-index : 100;
+}
+.sticky-nav-icons img{
+    font-size: 1.6rem;
+    margin-left : 0.6rem; 
+}
+.one{
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+.two{
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+.sticky-nav-options {
+    display : flex;
+    justify-content : center;
+    align-items : center; 
+}
+.nav-margin{
+    margin-right : 1rem;
+}
+.dark-badge {
+    background-color: black;
+    color : white;
+}
+@media (max-width : 1000px){
+    .hide {
+        display : none;
+    }
+}
+.card-container {
+    display : flex;
+    flex-wrap : wrap;
+}
+.card {
+    background-color: #292929;
+    width : 9rem;
+    border-radius : 10px;
+    padding : 1rem;
+    margin-left : 1.5rem;
+}
+.card img{
+    width : 100%;
+    border-radius : 1rem;
+}
+.card-title{
+    font-weight : 700;
+}
+.card-info{
+    opacity : 0.6;
+    font-size: 0.8rem;
+}
+.foot {
+    height:300px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+.line {
+    height : 30%;
+    width : 90%;
+    border: 1px soild rgb(255, 255, 255);
+    opacity: 0.4;
+}
+
+.music-player {
+    display : flex;
+}
+.album {
+    width :25%;
+    background: rgb(43, 41, 41);
+}
+.player {
+    width :50%;
+    background:rgb(43, 41, 41);
+}
+.controls {
+    width : 25%;
+    background: rgb(43, 41, 41);
+}
+.player-control {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icon {
+    height : 1rem;
+    margin-right : 2rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover {
+    opacity: 1;
+}
+.playback-bar {
+    display : flex;
+    justify-content: center;
+    align-items : center;
+}
+.progress-bar {
+    appearance: none;
+    width: 85%;
+    background : transparent;
+    cursor : pointer;
+}
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: rgba(68, 245, 157, 0.621);
+    border-radius : 10rgba(54, 186, 175, 0.621);
+    height : 0.4rem;
+}
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height : 1rem;
+    width :1rem;
+    background-color: rgb(28, 212, 94);
+    border-radius: 50%;
+    margin-top : -5px;
+}
